@@ -5,21 +5,6 @@ CHAPTER 2:
 Learned about how to properly model and design a database: Requirements Analysis -> Conceptual Design -> Logical Design. First write down what data you need from the database, then model it using the Entity Relationship model. Finally, translate this into the actual database. The Entity Relationship model is a way of describing how different tables are related to each other. Entities vs Attributes: Objects that are of direct interest to the database, have components of their own, or have multiple instances can all be entities. Otherwise they are attributes. Entity vs Relationship: Entities are nouns, relationships are verbs. Some times include an intermediate entity in a relationship (M:N = 2 * 2:N relationhips) Some types of entities are strong and weak, while there are M:N and 1:N relationships. Databases should be normalized. Try to remove repeating groups/redundant data and create diffferent tables for each attribute, relating them with the same key. Display the Entity-Relationship model of a database in MySQL Workshop.
 
 
-CHAPTER 3:
-Learned how to use the terminal to look at the database (SHOW tables, USE sakila,). 
-Used SELECT statements to look at tables and columns(SELECT * from city, SELECT city from city). 
-Use WHERE to select specific rows with atributes (SELECT city FROM city WHERE country_id = 5). 
-Combine the wildcard "%" and the LIKE function to look for strings that are only partially match the one in the WHERE. 
-Combine conditions with AND, OR, NOT, XOR. Limit will restrict the number of results to the INT listed. ORDER BY sorts the list. 
-JOIN will combine two tables. INSERT, DROP TABLE,TRUNCATE TABLE, DELETE FROM, UPDATE to change a table.
-
-SELECT film from film_list WHERE price < 5 AND AND (category LIKE 'Action' OR category LIKE 'Animation') AND actor LIKE "%GABLE%"
-
-SELECT city.name, country.name FROM city INNER JOIN country ON city.CountryCode = country.Code WHERE city.CountryCode = 'USA' ORDER BY city.name;
-
-UPDATE actor SET last_name= UPPER('BALE'), last_update = NOW() WHERE first_name LIKE 'CHRISTIAN';
-
-
 #### CHAPTER 4:
 
 Example scenario: We want to store information about NOCD members.
