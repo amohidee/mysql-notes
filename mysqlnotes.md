@@ -133,7 +133,7 @@ The table can be hard to decipher because of the naming convention used for vara
     FROM members JOIN therapists 
     ON members.therapist_id = therapists.therapist_id
 
-![join labeled](https://github.com/amohidee/mysql-notes/blob/main/joinlabeled.png)
+![join labeled](https://github.com/amohidee/mysql-notes/blob/main/joinLabeled.png)
 
 Remember that we altered the table to have a foreign key, so now every member will show up with a proper therapist when using this `JOIN` statement. There are no mismatches.
 
