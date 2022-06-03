@@ -213,22 +213,3 @@ This query has 3 nested queries:
 2) Find the max number of members
 3) Finds the id of the therapist with the max number of members
 4) Lists the members of this therapist
-
-
-//Unfinished
-CHAPTER 5:
-Give columns aliases using AS so that you can be more clear when displaying the table. Use the LIMIT clause to only list a specified number of rows.
-Use CONCAT to concatonate string results together when using a SELECT to display the table. It can make displaying information a lot more clear, by putting
-the data in sentences rather in strict columns.
-Use AS to simplify complicated JOINs. Use DISTINCT to remove duplicates when doing a SELECT on a table.
-GROUP BY aggregates all the rows that have the same column into one row. Use the HAVING clause to filter out results based on aggregated DATA (like COUNT).
-INNER JOIN joins two tables, use USING to make sure that the rows that show up have a row where the cols from both tables match. Use UNION to combine the results of
-mulitple SELECT statements into one list of rows. LEFT/RIGHT JOINS include rows that dont match the ON column from the respective table.
-Use ANY as a reference to a set returned by a nested query. ANY specifies that the criteria has to match for only one of the results in the list.
-ALL is similar, the criteria must match for every single result in the set returned by the nested query
-EXISTS is used to check if a subquery returns any results. If the subquery has at least one result EXISTS is true, and if none then false.
-NOT EXISTS is same but the opposite because of the NOT.
-
-Example scenario: 
-
- 
